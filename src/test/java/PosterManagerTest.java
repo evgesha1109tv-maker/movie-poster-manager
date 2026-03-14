@@ -146,6 +146,7 @@ public class PosterManagerTest {
         String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void filmManagerLastTest9FilmLimitAuto5() {
         PosterManager manager = new PosterManager();
@@ -160,10 +161,11 @@ public class PosterManagerTest {
         manager.addFilms("Холоп.Комедия");
         //manager.addFilms();
 
-        String[] expected = {"Холоп.Комедия","Последний богатырь.Приключения" , "Союз спасения.Драма","Джентельмены.Боевик" , "Тролли. Мировой тур.Мультфильм"};
+        String[] expected = {"Холоп.Комедия", "Последний богатырь.Приключения", "Союз спасения.Драма", "Джентельмены.Боевик", "Тролли. Мировой тур.Мультфильм"};
         String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void filmManagerLastTest9FilmLimit6() {
         PosterManager manager = new PosterManager(6);
@@ -178,10 +180,11 @@ public class PosterManagerTest {
         manager.addFilms("Холоп.Комедия");
         //manager.addFilms();
 
-        String[] expected = {"Холоп.Комедия","Последний богатырь.Приключения" , "Союз спасения.Драма","Джентельмены.Боевик" , "Тролли. Мировой тур.Мультфильм","Человек-невидимка.Ужасы"};
+        String[] expected = {"Холоп.Комедия", "Последний богатырь.Приключения", "Союз спасения.Драма", "Джентельмены.Боевик", "Тролли. Мировой тур.Мультфильм", "Человек-невидимка.Ужасы"};
         String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void filmManagerLastTest9FilmLimit9() {
         PosterManager manager = new PosterManager(9);
@@ -196,7 +199,7 @@ public class PosterManagerTest {
         manager.addFilms("Холоп.Комедия");
         //manager.addFilms();
 
-        String[] expected = {"Холоп.Комедия","Последний богатырь.Приключения" , "Союз спасения.Драма","Джентельмены.Боевик" , "Тролли. Мировой тур.Мультфильм","Человек-невидимка.Ужасы","Отель «Белград».Комедия","Вперёд.Мультфильм","Бладшот.боевик"};
+        String[] expected = {"Холоп.Комедия", "Последний богатырь.Приключения", "Союз спасения.Драма", "Джентельмены.Боевик", "Тролли. Мировой тур.Мультфильм", "Человек-невидимка.Ужасы", "Отель «Белград».Комедия", "Вперёд.Мультфильм", "Бладшот.боевик"};
         String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
